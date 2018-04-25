@@ -17,7 +17,9 @@
  * @param {org.acme.shipping.perishable.ShipmentReceived} shipmentReceived - the ShipmentReceived transaction
  * @transaction
  */
-"use strict";
+/*eslint strict: ["error", "global"]*/
+'use strict';
+
 function payOut(shipmentReceived) {
 
     var contract = shipmentReceived.shipment.contract;
