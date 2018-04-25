@@ -89,5 +89,5 @@ function test_node_app {
 }
 
 install_nodejs
-#test_contracts
+test_contracts
 #test_apps
