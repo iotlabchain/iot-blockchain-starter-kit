@@ -196,7 +196,7 @@ function gpsReading(gpsReading) {
     var latLong = '/LAT:' + gpsReading.latitude + gpsReading.latitudeDir + '/LONG:' +
     gpsReading.longitude + gpsReading.longitudeDir;
 
-    if (latLong == PORT_OF_NEW_YORK) {
+    if (latLong === PORT_OF_NEW_YORK) {
         var shipmentInPortEvent = factory.newEvent(NS, 'ShipmentInPortEvent');
         shipmentInPortEvent.shipment = shipment;
         var message = 'Shipment has reached the destination port of ' + PORT_OF_NEW_YORK;
@@ -205,10 +205,10 @@ function gpsReading(gpsReading) {
     }
 
     return getAssetRegistry(NS + '.Shipment')
-    .then(function (shipmentRegistry) {
+        .then(function (shipmentRegistry) {
         // add the temp reading to the shipment
-        return shipmentRegistry.update(shipment);
-    });
+            return shipmentRegistry.update(shipment);
+        });
 }
 
 /**
