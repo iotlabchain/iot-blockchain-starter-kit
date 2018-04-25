@@ -37,7 +37,7 @@ function test_composer_contract {
     echo testing composer contract ${CONTRACT}
     pushd contracts/${CONTRACT}
     npm install
-    npm test
+    #npm test
     rm -rf node_modules
     popd
 }
@@ -90,4 +90,4 @@ function test_node_app {
 
 install_nodejs
 test_contracts
-#test_apps
+test_apps
