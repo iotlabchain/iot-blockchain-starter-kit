@@ -15,9 +15,11 @@
 
 'use strict';
 /**
- * Write the unit tests for your transction processor functions here
+ * Initialize some test assets and participants useful for running a demo.
+ * @param {org.acme.shipping.perishable.SetupDemo} setupDemo - the SetupDemo transaction
+ * @transaction
  */
-function foo(test){
+function foo(setupDemo){
     var factory = getFactory();
     var NS = 'org.acme.shipping.perishable';
 
