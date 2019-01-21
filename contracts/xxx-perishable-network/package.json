@@ -8,8 +8,8 @@
     "lint": "eslint .",
     "test": "nyc mocha -t 0 test/*.js && cucumber-js"
   },
-  "author": "Jenn Foley",
-  "email": "foleyje@us.ibm.com",
+  "author": "labchain",
+  "email": "lab@chainenergy.eu",
   "license": "Apache-2.0",
   "devDependencies": {
     "composer-admin": "^0.19.2",
